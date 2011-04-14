@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingTop="5dip"
+	android:layout_gravity="center_horizontal"
+	>
+	<TableLayout
+		android:layout_height="wrap_content"
+		android:id="@+id/CredentialsTableLayout"
+		android:layout_width="fill_parent"
+		android:paddingTop="10dip"
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip"
+		android:paddingBottom="10dip">
+		<TableRow
+			android:id="@+id/TableRow01"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:id="@+id/UserNameInput"
+				android:layout_width="fill_parent"
+				android:layout_weight="7"
+				android:hint="email"
+				android:maxLines="1"
+				android:inputType="textEmailAddress"></EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/TableRow02"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+			<!--
+				<TextView android:layout_height="wrap_content"
+				android:id="@+id/PasswordLabel"
+				android:text="@string/user_password_label"
+				android:layout_width="fill_parent" android:layout_weight="3"
+				android:textColor="@android:color/black"></TextView>
+			-->
+			<EditText
+				android:layout_height="wrap_content"
+				android:id="@+id/PasswordInput"
+				android:layout_width="fill_parent"
+				android:layout_weight="7"
+				android:hint="password"
+				android:maxLines="1"
+				android:inputType="textPassword"></EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/TableRow02"
+			android:layout_height="wrap_content"
+			android:paddingTop="10dip"
+			android:layout_width="fill_parent">
+			<Button
+				android:layout_height="wrap_content"
+				android:id="@+id/SignInButton"
+				android:layout_weight="7"
+				android:text="Sign In"
+				android:layout_width="fill_parent"></Button>
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

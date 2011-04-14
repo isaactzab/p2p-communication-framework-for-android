@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/log_in">
+
+
+	<EditText android:layout_width="fill_parent" android:id="@+id/gr_editText1"
+		android:text="" android:layout_height="wrap_content" android:hint="Game Room name"></EditText>
+
+
+
+	<Button android:layout_width="fill_parent" android:id="@+id/gr_create"
+		android:layout_gravity="right" android:text="OK"
+		android:layout_height="wrap_content"></Button>
+</LinearLayout>
