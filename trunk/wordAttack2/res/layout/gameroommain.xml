@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/log_in" android:orientation="vertical"
+		android:gravity="bottom">
+		<TextView android:layout_width="fill_parent"
+			android:textSize="36dip" android:text="Welcome Back !!!" android:layout_height="wrap_content"
+			android:id="@+id/hello2" android:layout_alignParentLeft="true"
+			android:layout_marginLeft="25px"
+			android:textColor="#0000ff">
+		</TextView>
+		<TextView android:layout_width="fill_parent"
+			android:textSize="36dip" android:text="" android:layout_height="wrap_content"
+			android:id="@+id/hello" android:layout_alignParentLeft="true"
+			android:layout_marginLeft="15px"
+			android:textColor="#0000ff"
+			android:layout_below="@id/hello2">
+		</TextView>
+		
+		<TextView android:layout_width="fill_parent"
+			android:textSize="96dip" android:text="" android:layout_height="wrap_content"
+			android:id="@+id/label" android:layout_alignParentLeft="true"
+			android:layout_below="@id/hello"
+			android:textColor="#0000ff">
+		</TextView>
+		<Button android:layout_width="wrap_content" android:id="@+id/gr_main_button2"
+			android:text="   Join Game  " android:layout_height="wrap_content"
+			android:layout_below="@id/label" android:textSize="18dip"
+			android:layout_alignParentRight="true" android:layout_marginLeft="10px"></Button>
+		<Button android:text=" Create Game " android:id="@+id/gr_main_button1"
+			android:layout_width="wrap_content" android:layout_below="@id/label"
+			android:layout_height="wrap_content" android:textSize="18dip"
+			android:layout_marginLeft="10px" android:layout_alignParentLeft="true"></Button>
+		<Button android:text="Log Out" android:id="@+id/gr_main_button3"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/gr_main_button2" android:layout_gravity="bottom"
+			android:layout_marginLeft="10px" android:layout_alignParentRight="true"
+			android:textSize="18dip"></Button>
+	</RelativeLayout>

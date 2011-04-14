@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		/* ** ** Copyright 2009, The Android Open Source Project ** **
+		Licensed under the Apache License, Version 2.0 (the "License"); ** you
+		may not use this file except in compliance with the License. ** You
+		may obtain a copy of the License at ** **
+		http://www.apache.org/licenses/LICENSE-2.0 ** ** Unless required by
+		applicable law or agreed to in writing, software ** distributed under
+		the License is distributed on an "AS IS" BASIS, ** WITHOUT WARRANTIES
+		OR CONDITIONS OF ANY KIND, either express or implied. ** See the
+		License for the specific language governing permissions and **
+		limitations under the License. */
+	-->
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1"
+	android:versionName="1.0"
+	package="net.clc.bt">
+	<application
+		android:debuggable="true"
+		android:icon="@drawable/icon"
+		android:label="@string/app_name"
+		android:screenOrientation="portrait">
+
+
+
+
+
+		<activity
+			android:name=".ConfigActivity"
+			android:label="@string/app_name">
+
+		</activity>
+
+		<service
+			android:enabled="true"
+			android:name=".ConnectionService"
+			android:label="@string/app_name"
+			android:icon="@drawable/icon">
+			<intent-filter>
+				<action
+					android:name="com.google.intent.action.BT_ClickLinkCompete_SERVICE" />
+				<category
+					android:name="com.google.intent.category.BT_ClickLinkCompete" />
+			</intent-filter>
+		</service>
+
+		<activity
+			android:name=".ServerListActivity"
+			android:screenOrientation="portrait"
+			android:label="Pick your server">
+		</activity>
+
+		<activity
+			android:name=".StartDiscoverableModeActivity"
+			android:screenOrientation="portrait"
+			android:label="Enable discoverable mode"
+			android:theme="@android:style/Theme.Translucent">
+		</activity>
+
+		<activity
+			android:name=".Demo_Multiscreen"
+			android:label="Multiscreen Demo"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity
+			android:name=".BTChat"
+			android:label="BTChat"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity
+			android:name=".AirHockey"
+			android:label="Air Hockey: Click, Link, Compete"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity
+			android:name=".MultiScreenVideo"
+			android:label="MultiScreen Video: Click, Link, Compete"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name=".DeviceListActivity"
+			android:label="@string/select_device"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Dialog"
+			android:configChanges="orientation|keyboardHidden" />
+
+		<activity
+			android:name=".MainActivity"
+			android:label="@string/app_name"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+		</activity>
+
+
+		<activity
+		android:screenOrientation="portrait"
+			android:name="com.game.activity.GameStart">
+
+
+		</activity>
+
+		<activity
+			android:name="com.game.activity.MainMenu"
+			android:screenOrientation="portrait"></activity>
+		<activity
+			android:name="com.game.activity.GameServer"
+			android:screenOrientation="portrait"
+			></activity>
+		<activity
+			android:name="com.game.activity.GameClient"
+			android:screenOrientation="portrait"></activity>
+		<activity
+			android:name="com.EE4210.GameRoom.GameRoomChat"
+			android:screenOrientation="portrait"></activity>
+		<activity
+			android:name="com.EE4210.GameRoom.GameRoomLogin"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action
+					android:name="android.intent.action.MAIN" />
+				<category
+					android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="com.EE4210.GameRoom.GameRoomSignup"
+			android:screenOrientation="portrait"></activity>
+		<activity
+			android:name="com.EE4210.GameRoom.GameRoomJoin"
+			android:screenOrientation="portrait"></activity>
+		<activity
+			android:name="com.EE4210.GameRoom.GameRoomMain"
+			android:screenOrientation="portrait"></activity>
+		<activity
+			android:name="com.EE4210.GameRoom.GameRoomCreate"
+			android:screenOrientation="portrait"></activity>
+		<activity
+			android:name="com.EE4210.GameRoom.GameRoomChatHost"
+			android:screenOrientation="portrait"></activity>
+
+</application>
+
+
+
+
+	<uses-sdk
+		android:minSdkVersion="5" />
+	<uses-permission
+		android:name="android.permission.BLUETOOTH" />
+	<uses-permission
+		android:name="android.permission.BLUETOOTH_ADMIN" />
+	<uses-feature
+		android:name="android.hardware.camera" />
+	<uses-feature
+		android:name="android.hardware.camera.autofocus" />
+	<uses-permission
+		android:name="android.permission.CAMERA" />
+	<uses-permission
+		android:name="android.permission.VIBRATE" />
+	<uses-permission
+		android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<uses-permission
+		android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission
+		android:name="android.permission.VIBRATE" />
+		
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+ 	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+ 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />	
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:background="@drawable/log_in2"
+	android:layout_width="wrap_content" android:padding="15px">
+	<TextView android:layout_width="fill_parent" android:textSize="24dip"
+		android:text="     Welcome to EE4210" android:layout_height="wrap_content"
+		android:id="@+id/label" android:layout_alignParentLeft="true"
+		android:textColor="#0000ff">
+	</TextView>
+
+	<EditText android:id="@+id/inputemail" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_below="@id/label"
+		android:hint="Please Enter your Email" android:inputType="textEmailAddress">
+	</EditText>
+
+	<EditText android:id="@+id/inputpassword"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_below="@id/inputemail" android:inputType="textPassword"
+		android:hint="Please Enter Password">
+	</EditText>
+
+	<Button android:id="@+id/log_in" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/inputpassword"
+		android:layout_alignParentRight="true" android:layout_marginLeft="10px"
+		android:text="Log In" />
+
+	<Button android:id="@+id/sign_up" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/inputpassword"
+		android:layout_alignParentLeft="true" android:text="New User? Sign Up Now!" />
+
+	<TextView android:layout_width="fill_parent" android:textSize="24dip"
+		android:text="     Server Address:" android:layout_height="wrap_content"
+		android:id="@+id/text" android:layout_alignParentLeft="true"
+		android:layout_below="@id/sign_up" android:textColor="#0000ff">
+	</TextView>
+
+	<TextView android:layout_width="fill_parent" android:textSize="24dip"
+		android:text="     " android:layout_height="wrap_content" android:id="@+id/text2"
+		android:layout_below="@id/text" android:textColor="#0000ff">
+	</TextView>
+
+
+	<EditText android:layout_height="wrap_content" android:id="@+id/inputIP"
+		android:layout_below="@+id/text2" android:layout_width="fill_parent"
+		android:text="" android:layout_alignLeft="@+id/text2" android:hint="Please Enter Server IP" 
+		android:inputType="textEmailAddress">
+	</EditText>
+	<Button android:id="@+id/connect" android:layout_height="wrap_content" android:text="Connect" android:layout_below="@+id/inputIP" android:layout_width="wrap_content" android:layout_alignRight="@+id/inputIP"></Button>
+
+</RelativeLayout>
