@@ -1,3 +1,5 @@
+# P2P Communication Framework for android 
+#### This repository its a backup of https://code.google.com/archive/p/p2p-communication-framework-for-android
 This framework provide an easy to implement Peer-to-Peer communication framework allowing an nearby cluster of android phone to easlyr communicate with on another
 
 This framework provide an easy to implement Peer-to-Peer communication framework allowing an nearby cluster of android phone to easlyr communicate with on another. 
